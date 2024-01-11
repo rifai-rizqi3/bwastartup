@@ -33,6 +33,7 @@ func APIResponse(message string, code int, status string, data interface{}) Resp
 	return jsonResponse
 }
 
+// FormatValidationError is a function that formats validation errors into a slice of strings.
 func FormatValidationError(err error) []string {
 	var errors []string
 
